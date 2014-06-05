@@ -1,19 +1,20 @@
 def sum(lis=[])
 	if lis.empty?
-		puts 0
+		0
 	else
-		puts lis.reduce(:+)
+		lis.reduce(:+)
 	end
 end
 
+
 def max_2_sum(lis=[])
 	if lis.empty?
-		puts 0
+		0
 	elsif lis.count == 1
-		puts lis[0]
+		lis[0]
 	else
 		lis.sort! {|x,y| y <=>x}
-		puts lis[0]+lis[1]
+		lis[0]+lis[1]
 	end
 end
 
@@ -35,6 +36,8 @@ def sum_to_n?(lis=[], n=0)
 	false
 end
 
-puts sum_to_n?([1,2,3,4,5], n=1)
+puts sum([])
+
+#puts sum_to_n?([1,2,3,4,5], n=1)
 
 
