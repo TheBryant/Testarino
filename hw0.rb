@@ -24,8 +24,10 @@ def sum_to_n?(lis=[], n=0)
 	else
 		lis.sort!
 		for i in 0..(lis.length-1)
-			for j in 0..(lis.length-1)
+			for j in (i+1)..(lis.length-1)
 				if (lis[i] + lis[j]) == n
+					puts lis[i]
+					puts lis[j]
 					return true
 				elsif (lis[i] + lis[j]) > n
 					break
@@ -36,8 +38,6 @@ def sum_to_n?(lis=[], n=0)
 	false
 end
 
-puts sum([])
-
-#puts sum_to_n?([1,2,3,4,5], n=1)
+puts sum_to_n?([-1,-2,3,4,6,-8], n=12)
 
 
