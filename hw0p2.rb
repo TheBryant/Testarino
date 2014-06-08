@@ -11,7 +11,7 @@ def starts_with_consonant?(str)
 end
 
 def binary_multiple_of_4?(str)
-	if str.to_i % 4 == 0 && str.to_i != 0
+	if str.to_i(2) % 4 == 0 && str.to_i != 0
 		true
 	else
 		false
